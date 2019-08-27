@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Best Movies</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+  
+</head>
+<body  onkeyup="enter(event)">
+    <header>
+        <button id="back" onclick="history.back()"><i class="fa fa-angle-double-left"></i></button>
+        <input type="text" placeholder="Movie name" id="input">
+        <button id = "search" onclick="getMovieInfo()"><i class="fa fa-search"></i></button>
+        <button id = "next" onclick="history.forward()"><i class="fa fa-angle-double-right"></i></button>
+    </header>
+    <section id="main">        
+        <marquee behavior="alternate" loop="1"><h2>You can search for info about your favourite movies</h2></marquee>
+        <div id="myFilm">
+            <img src="images//poster-template-movie-poster.jpg" id="poster">
+            <div id="about">
+                <p id="error"></p>
+                <h1 id="title"></h1>
+                <table>
+                    <tr>
+                        <td>Director</td>
+                        <td id="director"></td>
+                    </tr>
+                    <tr>
+                        <td>Actors</td>
+                        <td id="actors"></td>
+                    </tr>
+                    <tr>
+                        <td>Genre</td>
+                        <td id="genre"></td>
+                    </tr>
+                    <tr>
+                        <td>Awards</td>
+                        <td
+                        id="awards"></td>
+                    </tr>
+                    <tr>
+                        <td>Country</td>
+                        <td id="country"></td>
+                    </tr>
+                    <tr>
+                        <td>Language</td>
+                        <td id="language"></td>
+                    </tr>
+                    <tr>
+                        <td>Scenario</td>
+                        <td id="plot"></td>
+                    </tr>
+                    <tr>
+                        <td>Runtime</td>
+                        <td id="runtime"></td>
+                    </tr>
+                    <tr>
+                        <td>Year</td>
+                        <td id="year"></td>
+                    </tr>
+                </table>
+
+            </div>
+        </div>
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>
